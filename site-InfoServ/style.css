@@ -337,3 +337,24 @@ footer .footer{
     margin-bottom: 20px;
 }
 }
+
+.contato {
+    margin-left: 250px;
+    max-width: 992px;
+    padding: 20px;
+}
+
+.titulo-contato {
+    font-size: 32px;
+}
+
+.contato-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.img-contato {
+    width: 150px;
+}
