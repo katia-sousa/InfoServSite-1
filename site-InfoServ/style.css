@@ -132,23 +132,38 @@ margin-bottom: 10px;
     min-width: 420px;
 
 }
-.container-carrosse{
+.container-carrossel{
     box-sizing: border-box;
     position: relative;
     padding: 15px;
-    max-width: 640px;
+    max-width: 1500px;
     margin: 0 auto;
 }
-.gallery-wapper{
+.gallery-wrapper {
     overflow-x: auto;
-}
+   }
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
 .gallery{
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
     margin: 15px;
 }
-.arow-left, .arow-right{
+.arrow-left, 
+.arrow-right{
     position:absolute;
     top: 0;
     left: 0;
@@ -166,14 +181,15 @@ margin-bottom: 10px;
     opacity: 0.3;
     transition: all 600ms ease-in-out;
 }
-.arow-right{
+.arrow-right{
     left: auto;
     right: 0;
     bottom: 0;
     background: linear-gradient(to
     right, transparent 0%, black 200%);   
 }
-.arow-left:hover, .arow-right:hover{
+.arrow-left:hover, 
+.arrow-right:hover{
 opacity: 1;
 }
 .item-carrossel {
@@ -182,7 +198,11 @@ opacity: 1;
     flex-shrink: 0;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
+   }
+.current-item{
+    opacity: 1;
 }
+
 .container-externo{
     background-color: #122a57;
     width: 100%;
