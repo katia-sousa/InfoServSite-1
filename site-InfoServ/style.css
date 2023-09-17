@@ -136,7 +136,7 @@ margin-bottom: 10px;
     box-sizing: border-box;
     position: relative;
     padding: 15px;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .gallery-wrapper {
@@ -198,9 +198,12 @@ opacity: 1;
     flex-shrink: 0;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
+    border: 5px solid white;
    }
 .current-item{
     opacity: 1;
+    border: 5px solid turquoise;
+    box-shadow: 0 0 10px;
 }
 
 .container-externo{
